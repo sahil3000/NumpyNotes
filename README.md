@@ -1,2 +1,5 @@
-# NumpyNotes
-Python Numpy Notes
+# Python Numpy Notes
+import numpy
+
+
+
