@@ -2,34 +2,43 @@ from numpy import *
 
 # one way to create array
 arr = array([1,2,3,4,5])
-print(arr.dtype)    # int32
-print(arr)  # output = [1,2,3,4,5]
+print(arr.dtype)
+# output= int32
+print(arr) 
+# output = [1,2,3,4,5]
 
 arr = array([1,2,3,4,5.0])
-print(arr.dtype)    # float64
-print(arr)  # output = [1.,2.,3.,4.,5.]
+print(arr.dtype)   
+# float64
+print(arr)  
+# output = [1.,2.,3.,4.,5.]
 
 arr = array([1,2,3,4,5],float)
-print(arr.dtype)    # float64
-print(arr)  # output = [1.,2.,3.,4.,5.]
+print(arr.dtype)  
+# float64
+print(arr)
+# output = [1.,2.,3.,4.,5.]
 
 arr = array([1,2,3,4,5],int)
-print(arr.dtype)    # int32
-print(arr)  # output = [1,2,3,4,5]
+print(arr.dtype)
+# int32
+print(arr) 
+# output = [1,2,3,4,5]
 
 # Another way to create array
-# linspace() end include check
-arr=linspace(0,16)  #linspace(start,end,parts)
+# linspace(start,end,parts) end include check
+arr=linspace(0,16)
 # why output in float because you breaks into parts i,e 16 parts
 print(arr)  # output = [0. 1. 2. 3. 4. 5. 6. 7. 8. 9. 10. 11. 12. 13. 14. 15.]
 
-arr=linspace(0,16,20)  #linspace(start,end,parts)
+arr=linspace(0,16,20)
 # break into 20 parts
 print(arr)  # output = [0. 0.78967368 1.5789737 2.36 -------- 15.]
 
 arr=linspace(0,15)  #linspace(start,end,parts)
 # parts is not specfic then it breaks according to(0-15 = 16 parts)
-print(arr)  # output = [0. 0.306----------------- 15.]
+print(arr) 
+# output = [0. 0.306----------------- 15.]
 
 # arange(start,end,step) # end not include
 arr=arange(1,15,2)
